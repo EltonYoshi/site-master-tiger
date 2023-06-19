@@ -1,15 +1,85 @@
 
-/*----Geral---*/
-button{
+/*---- Geral ---*/
+*{
+    box-sizing: border-box;
+}
+
+/*---- Botões CTA ---*/
+.button{
     border: none;
     font-weight: bold;
     font-size: 16px;
     padding: 5px 15px 5px 15px;
     font-family: var(--font-principal);
+    color: var(--cor-principal);
     background-color: var(--cor-secundaria);
 }
 
-/*----Cabeçalho---*/
+/*---- Botões Redes Sociais ---*/
+.redes{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 33px 0px 0px;
+    padding: 8px;
+    background-color: var(--cor-secundaria);
+    border-radius: 100%;
+}
+.icons img{
+    width: 40px;
+}
+
+/*---- Seções ---*/
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.fundo-laranja{
+    background-color: var(--cor-secundaria);
+}
+
+/*---- Título da Seção ---*/
+.titulo{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+}
+.centro{
+    text-align: center;
+}
+.esquerda{
+    margin-left: 134px;
+    text-align: left;
+    word-spacing: 36px;
+}
+.branco{
+    color: white;
+}
+.preto{
+    color: var(--cor-principal);
+}
+.cor-simbolo{
+    color: var(--cor-secundaria);
+}
+
+
+/*---- Paragrafo ---*/
+p {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+}
+
+/*---- Cabeçalho ---*/
 header{
     display: flex;
     flex-direction: row;
@@ -39,4 +109,183 @@ nav a{
     font-size: 16px;
     font-weight: 500;
     padding-right: 25px;
+}
+
+/*---- Home ---*/
+.home {
+    background-image: url(/assets/imgs/home.png);
+    background-size: cover;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+}
+.infos-home{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 8.5%;
+}
+.texto-home{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+.texto-home h1{
+    font-size: 90px;
+    font-weight: 800;
+}
+.texto-home p {
+    margin-top: 12px;
+    width: 70%;
+}
+.filter{
+    background-color: #0000008a;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+/*---- Instrutores ---*/
+.instrutores{
+    justify-content: space-around;
+    align-items: center;
+}
+.instrutores-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.instrutores-card{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 465px;
+}
+.instrutores-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.instrutores-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 133px;
+    background-color: var(--cor-principal);
+    color: white;
+}
+.instrutores-info h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*---- Competições ---*/
+.competicoes{
+    justify-content: space-around;
+    background-color: var(--cor-principal);
+}
+.competicoes-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.competicoes-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.competicoes-info img{
+    margin-bottom: 15px;
+    object-fit: cover;
+    width: 480px;
+    height: 350px;
+}
+.competicoes-info p{
+    text-align: center;
+    width: 60%;
+}
+
+/*---- Infraestrutura ---*/
+.infra{
+    height: 80vh;
+    justify-content: space-around;
+    background-color: var(--cor-secundaria);
+}
+.infra-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.infra-container img{
+    object-fit:c over;
+    width: 580px;
+    height: 386px;
+}
+
+.infra-container p{
+    width: 40%;
+    color: var(--cor-principal);
+    margin-right: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*---- Localização ---*/
+.loc{
+    background-color: var(--cor-principal);
+    justify-content: space-around;
+}
+.loc-map{
+    width: 100%;
+    height: 80%;
+}
+
+/*---- Rodapé ---*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: black;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-menu img{
+    width: 134px;
+}
+.footer-menu nav{
+    margin-left: 40px;
+}
+.linha{
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid #FFFFFF;
+}
+.footer-copy{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.footer-copy a{
+    font-size: 12px;
+    color: white;
 }
