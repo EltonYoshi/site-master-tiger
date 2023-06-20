@@ -24,11 +24,11 @@
         </div>
         
         <nav>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
             <a href="#instrutores">Instrutores</a>
-            <a href="">Depoimentos</a>
+            <a href="#depoimentos">Depoimentos</a>
             <a href="#loc">Localização</a>
-            <a href="" class="button">Contato</a>
+            <a href="#forms" class="button">Contato</a>
         </nav>
     </header>
 
@@ -46,7 +46,7 @@
                         <img src="/assets/icons/facebook.svg" alt="Botão para a abrir o perfil do Facebook.">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/mastertiger2023/">
                     <div class="icons">
                         <img src="/assets/icons/instagram.svg" alt="Botão para a abrir o perfil do Instagram.">
                     </div>
@@ -60,24 +60,56 @@
         </div>
         
     </section>
+    
+    <!-- Bem-vindo -->
+    <section id="sobre" class="sobre">
+        <div class="bem-vindo">
+          <h2 class="titulo-sec centro branco"><span class="cor-simbolo">환영</span><br>BEM-VINDO A MASTER TIGER</h2>
+          <p>A Academia Master Tiger está localizada na cidade de Cachoeirinha e, há cerca de 30 anos, possui um projeto social criado pelo professor e diretor, Osmar Spido, que busca fazer a inclusão social de crianças, adolescentes e adultos, através do ensinamento gratuito da arte marcial, Taekwondo. </p>
+        </div>
+
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+        <input type="radio" name="slider" id="item-5">
+        <input type="radio" name="slider" id="item-6">
+        <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="/assets/carrossel/image1.jpg" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="/assets/carrossel/image2.jpg" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="/assets/carrossel/image3.jpg" alt="song">
+            </label>
+            <label class="card" for="item-4" id="song-4">
+              <img src="/assets/carrossel/image4.jpg" alt="song">
+            </label>
+            <label class="card" for="item-5" id="song-5">
+              <img src="/assets/carrossel/image5.jpg" alt="song">
+            </label>
+          </div>
+    </section>
 
     <!-- Instrutores -->
     <section id="instrutores" class="instrutores fundo-laranja">
 
-        <h2 class="titulo centro preto">교사<br>Instrutores</h2>
+        <h2 class="titulo-sec centro preto">교사<br>Instrutores</h2>
 
         <div class="instrutores-container">
             <div class="instrutores-card">
                 <img src="/assets/imgs/instrutor-osmar.jpg" alt="Imagem da coordenador Osmar Spido">
                 <div class="instrutores-info">
-                    <h2 class="titulo">Osmar Spido</h2>
+                    <h2 class="titulo-texto">Osmar Spido</h2>
                     <h3>Coordenador</h3>
                 </div>
             </div>
             <div class="instrutores-card">
                 <img src="/assets/imgs/instrutor-tamyres.jpg" alt="Imagem da instrutora Tamyres">
                 <div class="instrutores-info">
-                    <h2 class="titulo">Tamyres</h2>
+                    <h2 class="titulo-texto">Tamyres Fischer</h2>
                     <h3>Instrutora</h3>
                 </div>
             </div>
@@ -85,20 +117,72 @@
         
     </section>
 
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="carrossel-depoimento">
+        <div class="degrade"></div>
+        <div class="header">
+            <h2 class="titulo-sec esquerda branco"><spa class="cor-simbolo">증착</spa> DEPOIMENTOS </h2>
+            <div class="arrow-buttons">
+              <button onclick="moverParaDireita()"><img src="/assets/icons/arrow-right.svg" alt=""></button>
+              <button onclick="moverParaEsquerda()"><img src="./assets/icons/arrow-left.svg" alt=""></button>
+            </div>
+
+        </div>
+
+        <div class="carrossel-container">
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="/assets/depoimentos/user-profile/user-carlos.jpg" alt="">
+              <p>Baa q nostalgia, foi aí aonde tudo começou, foi aonde eu conhece o Taekwondo, foi aí q tive o maior aprendizado, Saudades desse tempo ❤️🥋</p>
+              <h5>carlinhoos_051</h5>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="/assets/depoimentos/user-profile/user-projeto.jpg" alt="">
+              <p>Parabéns pelo trabalho 👏</p>
+              <h5>projeto_guerreiross</h5>
+            </div>
+          </div>
+          
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="/assets/depoimentos/user-profile/user-pricila.jpg" alt="">
+              <p>Gratidão pela oportunidade de meu filho estar podendo participar deste maravilhoso projeto. 😍</p>
+              <h5>terapeutapriscilareal</h5>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="/assets/depoimentos/user-profile/user-lethy.jpg" alt="">
+              <p>Isso sim é uma família de vdd ❤️</p>
+              <h5>lethy.ramos</h5>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="/assets/depoimentos/user-profile/user-none.jpg" alt="">
+              <p>A melhor academia😍😍😍</p>
+              <h5>_isahjaqs</h5>
+            </div>
+        </div>
+ 
+        
+    </section>
     <!-- Competições -->
     <section class="competicoes">
-        <h2 class="titulo centro branco"><span class="cor-simbolo">대회</span><br>Principais Competições</h2>
+        <h2 class="titulo-sec centro branco"><span class="cor-simbolo">대회</span><br>Principais Competições</h2>
 
         <div class="competicoes-container">
             <div class="competicoes-info">
                 <img src="./assets/imgs/competicoes1.jpg" alt="">
-                <h2 class="titulo branco">Instrutor das Aulas</h2>
+                <h2 class="titulo-texto branco">Instrutor das Aulas</h2>
                 <p>Oferecemos serviços de instrução para os níveis, desde iniciantes a competidores experientes.</p>
             </div>
 
             <div class="competicoes-info">
                 <img src="./assets/imgs/competicoes2.jpg" alt="">
-                <h2 class="titulo branco">Aulas</h2>
+                <h2 class="titulo-texto branco">Aulas</h2>
                 <p>Oferecemos serviços de instrução para os níveis, desde iniciantes a competidores experientes.</p>
             </div>
         </div>
@@ -107,16 +191,33 @@
 
       <!-- Infraestrutura -->
       <section  class="infra">
-        <h2 class="titulo esquerda preto">하부구조 Infraestrutura</h2>
+        <h2 class="titulo-sec esquerda preto">하부구조 Infraestrutura</h2>
         <div class="infra-container">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
             <img src="./assets/imgs/equipamento1.jpg" alt="">
         </div>
       </section>
 
+      <!-- Formulário -->
+      <section id="forms" class="forms">
+        <div class="forms-text">
+            <h3 class="titulo-texto branco">Formulário de Contato Team Tiger</h3>
+            <p>Envie uma mensagem para a Team Tiger para obter mais informações sobre o projeto.</p>
+        </div>
+
+        <div class="forms-area">
+          <h3 class="branco">Nome:</h3>
+          <input type="text" name="" id="">
+          <h3 class="branco">Email:</h3>
+          <input type="email" name="" id="">
+          <h3 class="branco">Mensagem:</h3>
+          <input type="text" name="" id="">
+        </div>
+      </section>
+
       <!-- Localização -->
       <section id="loc" class="loc">
-        <h2 class="titulo esquerda branco"><span class="cor-simbolo">가족</span> Localização</h2>
+        <h2 class="titulo-sec esquerda branco"><span class="cor-simbolo">가족</span> Localização</h2>
 
         <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.5650422983654!2d-51.075518224755605!3d-29.905631174993793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519724a50631ea9%3A0xb4039e8351848117!2sR.%20Peru%2C%20308%20-%20Vila%20Fatima%2C%20Cachoeirinha%20-%20RS%2C%2094965-360!5e0!3m2!1spt-BR!2sbr!4v1687204046371!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
@@ -126,9 +227,9 @@
                 <img src="/assets/logo/logo-branco.png" alt="">
     
                 <nav>
-                    <a href="">Sobre</a>
+                    <a href="#sobre">Sobre</a>
                     <a href="#instrutores">Instrutores</a>
-                    <a href="">Depoimentos</a>
+                    <a href="#depoimentos">Depoimentos</a>
                     <a href="#loc">Localização</a>
                 </nav>
             </div>
@@ -140,7 +241,7 @@
                         <img src="/assets/icons/facebook.svg" alt="Botão para a abrir o perfil do Facebook.">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/mastertiger2023/">
                     <div class="icons">
                         <img src="/assets/icons/instagram.svg" alt="Botão para a abrir o perfil do Instagram.">
                     </div>
@@ -162,5 +263,6 @@
             <a href="">Desenvedores</a>
         </div>
       </footer>
+      <script src="./scripts/script.js"></script>
 </body>
 </html>

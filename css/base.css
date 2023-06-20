@@ -14,6 +14,10 @@
     color: var(--cor-principal);
     background-color: var(--cor-secundaria);
 }
+.button:hover{
+    background-color: var(--cor-button-hover);
+    color: white;
+}
 
 /*---- Botões Redes Sociais ---*/
 .redes{
@@ -21,7 +25,6 @@
     display: flex;
     flex-direction: row;
 }
-
 .icons{
     display: flex;
     justify-content: center;
@@ -31,6 +34,9 @@
     background-color: var(--cor-secundaria);
     border-radius: 100%;
 }
+.icons:hover{
+    background-color: var(--cor-button-hover);
+}
 .icons img{
     width: 40px;
 }
@@ -39,7 +45,6 @@
 section {
     width: 100%;
     height: 100vh;
-    padding: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -48,9 +53,9 @@ section {
 }
 
 /*---- Título da Seção ---*/
-.titulo{
+.titulo-sec{
     font-weight: 800;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 49px;
 }
 .centro{
@@ -70,12 +75,17 @@ section {
 .cor-simbolo{
     color: var(--cor-secundaria);
 }
-
+/*---- Título da Seção ---*/
+.titulo-texto{
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 49px;
+}
 
 /*---- Paragrafo ---*/
 p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 25px;
     color: white;
 }
 
@@ -109,6 +119,10 @@ nav a{
     font-size: 16px;
     font-weight: 500;
     padding-right: 25px;
+}
+
+nav a:hover{
+    color: var(--cor-secundaria);
 }
 
 /*---- Home ---*/
@@ -151,6 +165,34 @@ nav a{
     height: 100vh;
 }
 
+/*---- Sobre ---*/
+.sobre {
+    width: 100%;
+    height: 120vh;
+    background-color: var(--cor-principal);
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bem-vindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bem-vindo h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.bem-vindo p{
+    text-align: center;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+
 /*---- Instrutores ---*/
 .instrutores{
     justify-content: space-around;
@@ -182,7 +224,6 @@ nav a{
 }
 .instrutores-info h2{
     margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 /*---- Competições ---*/
@@ -235,6 +276,16 @@ nav a{
     font-weight: 600;
     text-align: center;
 }
+
+/*---- Infraestrutura ---*/
+.forms{
+    background-color: var(--cor-principal);
+}
+
+
+
+
+
 
 /*---- Localização ---*/
 .loc{
