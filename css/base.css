@@ -57,6 +57,7 @@ section {
     font-weight: 800;
     font-size: 35px;
     line-height: 49px;
+    z-index: 2;
 }
 .centro{
     text-align: center;
@@ -197,11 +198,20 @@ nav a:hover{
 .instrutores{
     justify-content: space-around;
     align-items: center;
+    background-image: url(/assets/imgs/instrutor-background.png);
+}
+.instrutor-filtro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff8644e0;
+    z-index: 0;
 }
 .instrutores-container{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 }
 .instrutores-card{
     display: flex;
@@ -277,13 +287,44 @@ nav a:hover{
     text-align: center;
 }
 
-/*---- Infraestrutura ---*/
+/*---- Formulário Contato ---*/
 .forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--cor-principal);
+}
+.forms-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.forms-text{
+    width: 40%;
+}
+.forms-text p{
+    margin-top: 10px;
+    width: 80%;
+}
+.forms h3{
+    font-size: 40px;
+}
+.forms input, textarea{
+    border: 2px solid #FF8744 ;
+    background-color: #0B0B0B;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    width: 582px;
+    color: white;
 }
 
 
-
+textarea {
+  height: 170px;
+}
 
 
 
