@@ -76,14 +76,14 @@
           <h2 class="titulo-sec centro branco"><span class="cor-simbolo">환영</span><br>BEM-VINDO A MASTER TIGER</h2>
           <p>A Academia Master Tiger está localizada na cidade de Cachoeirinha e, há cerca de 30 anos, possui um projeto social criado pelo professor e diretor, Osmar Spido, que busca fazer a inclusão social de crianças, adolescentes e adultos, através do ensinamento gratuito da arte marcial, Taekwondo. </p>
         </div>
-
-        <input type="radio" name="slider" id="item-1" checked>
-        <input type="radio" name="slider" id="item-2">
-        <input type="radio" name="slider" id="item-3">
-        <input type="radio" name="slider" id="item-4">
-        <input type="radio" name="slider" id="item-5">
-        <input type="radio" name="slider" id="item-6">
-        <div class="cards">
+        <div class="slider-container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+          <input type="radio" name="slider" id="item-4">
+          <input type="radio" name="slider" id="item-5">
+          <input type="radio" name="slider" id="item-6">
+          <div class="cards">
             <label class="card" for="item-1" id="song-1">
               <img src="/assets/carrossel/image1.jpg" alt="song">
             </label>
@@ -99,9 +99,14 @@
             <label class="card" for="item-5" id="song-5">
               <img src="/assets/carrossel/image5.jpg" alt="song">
             </label>
+            <label class="card" for="item-6" id="song-6">
+              <img src="/assets/carrossel/image6.jpg" alt="song">
+            </label>
           </div>
+        </div>
+        
     </section>
-
+   
     <!-- Instrutores -->
     <section id="instrutores" class="instrutores fundo-laranja">
         <div class="instrutor-filtro"></div>
@@ -178,23 +183,25 @@
  
         
     </section>
-    <!-- Competições -->
-    <section class="competicoes">
-        <h2 class="titulo-sec centro branco"><span class="cor-simbolo">대회</span><br>Principais Competições</h2>
+     <!-- Competições -->
+     <section class="competicoes">
+      <h2 class="titulo-sec centro branco"><span class="cor-simbolo">정보</span><br>informações</h2>
 
-        <div class="competicoes-container">
-            <div class="competicoes-info">
-                <img src="./assets/imgs/competicoes1.jpg" alt="">
-                <h2 class="titulo-texto branco">Instrutor das Aulas</h2>
-                <p>Oferecemos serviços de instrução para os níveis, desde iniciantes a competidores experientes.</p>
-            </div>
+      <div class="competicoes-container">
+          <div class="competicoes-info">
+              <img src="./assets/imgs/competicoes1.jpg" alt="">
+              
+              <h2 class="titulo-texto branco">Competições</h2>
+              <p>Oferecemos serviços de instrução para os níveis, desde iniciantes a competidores experientes.</p>
+          </div>
 
-            <div class="competicoes-info mobiloDisplayNone">
-                <img src="./assets/imgs/competicoes2.jpg" alt="">
-                <h2 class="titulo-texto branco">Aulas</h2>
-                <p>Oferecemos serviços de instrução para os níveis, desde iniciantes a competidores experientes.</p>
-            </div>
-        </div>
+          <div class="competicoes-info mobiloDisplayNone">
+              <img src="./assets/imgs/competicoes2.jpg" alt="">
+
+              <h2 class="titulo-texto branco">Aulas</h2>
+              <p>Aulas para aprimorar usa resistência, flexibilidade e coordenação muscular, promovendo o bem estar físico e mental.</p>
+          </div>
+      </div>
 
     </section>
 
@@ -202,7 +209,7 @@
       <section  class="infra">
         <h2 class="titulo-sec esquerda preto">하부구조 Infraestrutura</h2>
         <div class="infra-container">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+            <p>A Academia de Taekwondo Master Tiger possui um local espaçoso em que os alunos têm acesso a uma variedade de equipamentos de última geração, como sacos de pancada, protetores de impacto, equipamentos de sparring e aparelhos de condicionamento físico. Esses recursos ajudam a aprimorar as habilidades técnicas e físicas dos praticantes, proporcionando uma experiência de treinamento excepcional.</p>
             <img src="./assets/imgs/equipamento1.jpg" alt="">
         </div>
       </section>
@@ -216,15 +223,23 @@
             <p class="mobiloDisplayNone">Envie uma mensagem para a Team Tiger para obter mais informações sobre o projeto.</p>
           </div>
 
-          <div class="forms-area">
+          <form class="forms-area" onsubmit="event.preventDefault(); validadeForm()">
             <p class="mobiloDisplay">Envie uma mensagem para a Team Tiger para obter mais informações sobre o projeto.</p>
-            <h5 class="branco">Nome:</h5>
-            <input type="text" name="" id="">
-            <h5 class="branco">Email:</h5>
-            <input type="email" name="" id="">
-            <h5 class="branco">Mensagem:</h5>
-            <textarea></textarea>
-          </div>
+            
+            <input type="text" id="name" placeholder="Seu Nome">
+            <small class="error"></small>
+
+            <input type="text" id="email" placeholder="Seu Email">
+            <small class="error"></small>
+
+            <textarea id="message" class="mensagem-area" placeholder="Sua mensagem" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <button class="button" id="btn">Enviar</button>
+                <p id="suscess"></p>
+            </div>
+          </form>
         </div>
 
       </section>
@@ -232,9 +247,28 @@
       <!-- Localização -->
       <section id="loc" class="loc">
         <h2 class="titulo-sec esquerda branco"><span class="cor-simbolo">가족</span> Localização</h2>
-
-        <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.5650422983654!2d-51.075518224755605!3d-29.905631174993793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519724a50631ea9%3A0xb4039e8351848117!2sR.%20Peru%2C%20308%20-%20Vila%20Fatima%2C%20Cachoeirinha%20-%20RS%2C%2094965-360!5e0!3m2!1spt-BR!2sbr!4v1687204046371!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.2916220427023!2d-51.0872068!3d-29.884696700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519721acf756335%3A0xc61ec6ba0be08273!2sR.%20Atl%C3%A2ntida%2C%201050%20-%20Jardim%20Bet%C3%A2nia%2C%20Cachoeirinha%20-%20RS%2C%2094970-680!5e0!3m2!1spt-BR!2sbr!4v1688424259659!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
+     
+      <!-- Horário -->
+      <section class="horario">
+        <h2 class="titulo-sec esquerda branco"><span class="cor-simbolo">일정</span> Horários</h2>
+        <div class="horario-container">
+          <div>
+            <p class="destaque">Terças-feiras e quintas-feiras</p>
+            <p>Até 13 anos</p>
+            <p>Das 19h as 20h</p>
+          </div>
+
+
+          <div>
+            <p class="destaque">Acima de 14 anos</p>
+            <p>Das 20h as 21h</p>
+          </div>  
+        </div>
+      </section>
+
+      <!-- Rodapé -->
       <footer>
         <div class="footer-container">
             <div class="footer-menu">
@@ -278,6 +312,8 @@
             <a href="">Desenvedores</a>
         </div>
       </footer>
-      <script src="./scripts/script.js"></script>
+
 </body>
+<script src="./scripts/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>

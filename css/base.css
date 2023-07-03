@@ -18,6 +18,7 @@
 }
 .button:hover{
     background-color: var(--cor-button-hover);
+    cursor: pointer;
     color: white;
 }
 
@@ -79,11 +80,14 @@ section {
 .cor-simbolo{
     color: var(--cor-secundaria);
 }
-/*---- Título da Seção ---*/
+/*---- Título para Texto ---*/
 .titulo-texto{
     font-weight: 800;
     font-size: 25px;
     line-height: 49px;
+}
+.destaque{
+    font-weight: 800;
 }
 
 /*---- Paragrafo ---*/
@@ -230,7 +234,7 @@ nav a:hover{
 /*---- Sobre ---*/
 .sobre {
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     background-color: var(--cor-principal);
     transform-style: preserve-3d;
     display: flex;
@@ -297,8 +301,9 @@ nav a:hover{
     margin-top: 10px;
 }
 
-/*---- Competições ---*/
+/*---- Informações ---*/
 .competicoes{
+    height: 110vh;
     justify-content: space-around;
     background-color: var(--cor-principal);
 }
@@ -316,7 +321,7 @@ nav a:hover{
     margin-bottom: 15px;
     object-fit: cover;
     width: 480px;
-    height: 350px;
+    height: 250px;
 }
 .competicoes-info p{
     text-align: center;
@@ -363,6 +368,11 @@ nav a:hover{
     align-items: center;
     width: 100%;
 }
+.forms-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .forms-text{
     width: 40%;
 }
@@ -380,14 +390,20 @@ nav a:hover{
     padding: 20px;
     width: 582px;
     color: white;
+    font-family: var(--font-principal);
 }
 
-
-textarea {
+.forms textarea {
   height: 170px;
 }
 
+.forms ::-webkit-input-placeholder{
+    font-family: var(--font-principal);
+}
 
+.center .button {
+    padding: 10px 25px 10px 25px;
+}
 
 /*---- Localização ---*/
 .loc{
@@ -397,6 +413,21 @@ textarea {
 .loc-map{
     width: 100%;
     height: 80%;
+}
+
+/*---- Horário ---*/
+.horario{
+    height: 25vh;
+    background-color: var(--cor-principal);
+}
+.horario h2{
+    margin-top: 15px;
+}
+.horario-container{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 /*---- Rodapé ---*/

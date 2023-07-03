@@ -59,3 +59,26 @@ mobileMenuIcon.addEventListener('click', function() {
   mobileMenuIcon.classList.toggle('active');
   mobileMenu.classList.toggle('active');
 });
+
+
+
+
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function(e){
+    e.preventDefault()
+    var name = document.getElementById('name').value
+    var email = document.getElementById('email').value
+    var message = document.getElementById('Message')
+    var body = 'name: ' +name + '<br/> email: ' + email+ '<br/>message' + message;
+
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "master.tiger22344@gmail.com",
+    Password : "MASTIGER!23",
+    To : 'yoshielton79@gmail.com,',
+    From : Email,
+    Subject : "Mesagem do site",
+    Body : body}).then(message => alert(message));})
+
+
