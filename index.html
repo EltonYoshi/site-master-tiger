@@ -236,7 +236,7 @@
             <small class="error"></small>
 
             <div class="center">
-                <button class="button" id="btn">Enviar</button>
+                <button class="button" id="btn"  onclick="sendMail()">Enviar</button>
                 <p id="suscess"></p>
             </div>
           </form>
@@ -315,5 +315,15 @@
 
 </body>
 <script src="./scripts/script.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="script.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("f9roB_7B05Y5gpqLl");
+  })();
+</script>
 </html>

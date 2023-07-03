@@ -64,21 +64,25 @@ mobileMenuIcon.addEventListener('click', function() {
 
 
 
-var btn = document.getElementById('btn');
-btn.addEventListener('click', function(e){
-    e.preventDefault()
-    var name = document.getElementById('name').value
-    var email = document.getElementById('email').value
-    var message = document.getElementById('Message')
-    var body = 'name: ' +name + '<br/> email: ' + email+ '<br/>message' + message;
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
 
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "master.tiger22344@gmail.com",
-    Password : "MASTIGER!23",
-    To : 'yoshielton79@gmail.com,',
-    From : Email,
-    Subject : "Mesagem do site",
-    Body : body}).then(message => alert(message));})
+  const serviceID = "service_uupp9o9";
+  const templateID = "template_r9vtvp2";
 
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
 
+    })
+    .catch(err=>console.log(err));
+
+}
