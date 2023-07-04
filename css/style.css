@@ -3,4 +3,6 @@
 @import "./base.css";
 @import "./variaveis.css";
 @import "./responsividade/mobile.css";
-@import "./responsividade/tablet.css"
+@import "./responsividade/tablet.css";
+@import "./privacidade-devs/privacidade.css";
+@import "./privacidade-devs/devs.css"

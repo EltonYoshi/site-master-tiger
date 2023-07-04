@@ -1,3 +1,7 @@
+
+
+//Carrossel de Depoimentos
+
 const carrosselContainer = document.querySelector('.carrossel-container');
         let translateValue = 0;
         let itemWidth = 20;
@@ -7,14 +11,14 @@ const carrosselContainer = document.querySelector('.carrossel-container');
 
           if (isMobile) {
             itemWidth = 82;
-        } else{
+          } else{
             itemWidth = 20;
-        }
-        if (translateValue < 0) {
+          }
+          if (translateValue < 0) {
           translateValue += itemWidth;
           carrosselContainer.style.transform = `translateX(${translateValue}%)`;
+         }
         }
-      }
       
         function moverParaDireita() {
           const carrosselWidth = carrosselContainer.offsetWidth;
@@ -44,15 +48,7 @@ const carrosselContainer = document.querySelector('.carrossel-container');
             }
           }
         }
-        
-
-
-
-
-
-
-
-        const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 mobileMenuIcon.addEventListener('click', function() {
@@ -62,7 +58,7 @@ mobileMenuIcon.addEventListener('click', function() {
 
 
 
-
+//Função de Mandar Email para a Instituição
 
 function sendMail() {
   var params = {
